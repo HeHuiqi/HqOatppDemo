@@ -1,6 +1,6 @@
-oattp 本地编译demo 
+# oattp 本地编译demo 
 
-安装软件
+## 安装软件
 ```
 Xcode
 brew install cmake
@@ -8,7 +8,7 @@ brew install make
 
 ```
 
-编译环境
+## 编译环境
 ```
 MacOS 12.4
 Xcode 13.1
