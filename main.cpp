@@ -7,14 +7,14 @@
 //
 
 // 使用前需要先编译安装 
-#include "include/oatpp/web/server/HttpConnectionHandler.hpp"
-#include "include/oatpp/network/Server.hpp"
-#include "include/oatpp/network/tcp/server/ConnectionProvider.hpp"
+// #include "include/oatpp/web/server/HttpConnectionHandler.hpp"
+// #include "include/oatpp/network/Server.hpp"
+// #include "include/oatpp/network/tcp/server/ConnectionProvider.hpp"
 
 // 直接使用源码中的头文件
-// #include "oatpp/web/server/HttpConnectionHandler.hpp"
-// #include "oatpp/network/Server.hpp"
-// #include "oatpp/network/tcp/server/ConnectionProvider.hpp"
+#include "oatpp/web/server/HttpConnectionHandler.hpp"
+#include "oatpp/network/Server.hpp"
+#include "oatpp/network/tcp/server/ConnectionProvider.hpp"
 
 /**
  * Custom Request Handler
@@ -45,8 +45,8 @@ void run() {
     auto connectionProvider = oatpp::network::tcp::server::ConnectionProvider::createShared({"localhost", 8000, oatpp::network::Address::IP_4});
     
     /* Create server which takes provided TCP connections and passes them to HTTP connection handler */
-   oatpp::network::Server server(connectionProvider, connectionHandler);
-    // oatpp::network::Server server = oatpp::network::Server(connectionProvider, connectionHandler);
+//    oatpp::network::Server server(connectionProvider, connectionHandler);
+    oatpp::network::Server server = oatpp::network::Server(connectionProvider, connectionHandler);
     
     /* Priny info about server port */
     OATPP_LOGI("MyApp", "Server running on port %s", connectionProvider->getProperty("port").getData());
