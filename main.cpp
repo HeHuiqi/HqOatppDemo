@@ -51,6 +51,7 @@ void run() {
     /* Priny info about server port */
     OATPP_LOGI("MyApp", "Server running on port %s", connectionProvider->getProperty("port").getData());
     //Vist http://localhost:8000/hello
+    OATPP_LOGI("MyApp","http://localhost:8000/hello");
     
     /* Run server */
     server.run();

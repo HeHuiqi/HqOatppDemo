@@ -4,8 +4,8 @@
             "name": "Mac",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/include/oatpp/**",
-                "${workspaceFolder}/oatpp/**"
+                "${workspaceFolder}/oatpp/**",
+                "${workspaceFolder}/include/oatpp/**"
             ],
             "defines": [],
             "macFrameworkPath": [
