@@ -3,7 +3,7 @@ project(test_include)
 
 message("当前目录：" ${CMAKE_CURRENT_SOURCE_DIR})
 
-# 选项
+# 选项开关 可以使用 ccmake .. 来交互设置可选项开关
 option(is_build_otpp_all_lib "是否编译全部" ON)
 
 if(is_build_otpp_all_lib)
